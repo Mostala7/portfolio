@@ -1,0 +1,72 @@
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: var(--grid-line-color);
+  gap: 1px;
+  border-bottom: 1px solid var(--grid-line-color);
+}
+
+.grid-cell {
+  background-color: var(--bg-color);
+  padding: 3rem; /* default padding */
+}
+
+/* Grid Span Classes */
+.col-span-4 { grid-column: span 4; }
+.col-span-8 { grid-column: span 8; }
+.col-span-12 { grid-column: span 12; }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .col-span-4, .col-span-8, .col-span-12 {
+    grid-column: span 12;
+  }
+}
+
+/* Specific Cell Adjustments */
+.header-cell {
+  display: flex;
+  align-items: center;
+}
+
+.favorite-cell {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.recent-favorite {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.recent-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+.track-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.track-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.track-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ddd; /* placeholder */
+  background-image: url('https://picsum.photos/100/100?random=1'); /* Placeholder for now */
+  background-size: cover;
+}
