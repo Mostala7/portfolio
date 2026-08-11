@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, Camera, Code, Mail } from 'lucide-react';
+import { FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 import './AboutSection.css';
 
 const AboutSection = () => {
@@ -16,23 +16,26 @@ const AboutSection = () => {
       </div>
 
       <div className="about-section-footer">
-        <div className="about-section-find-me">
-          FIND ME AT
+        <div>
+          <div className="about-section-find-me">
+            FIND ME AT
+          </div>
+          <div className="about-section-social-links">
+            <a href="https://www.instagram.com/_mostala7/" target="_blank" rel="noopener noreferrer" className="about-section-social-link instagram">
+              <FaInstagram size={18} />
+            </a>
+            <a href="https://www.linkedin.com/in/mostafa-elesawy/" target="_blank" rel="noopener noreferrer" className="about-section-social-link linkedin">
+              <FaLinkedin size={18} />
+            </a>
+            <a href="https://x.com/_mostala7_" target="_blank" rel="noopener noreferrer" className="about-section-social-link twitter">
+              <FaTwitter size={18} />
+            </a>
+          </div>
         </div>
-        <div className="about-section-social-links">
-          <a href="#" className="about-section-social-link">
-            <MessageCircle size={18} />
-          </a>
-          <a href="#" className="about-section-social-link">
-            <Camera size={18} />
-          </a>
-          <a href="#" className="about-section-social-link">
-            <Code size={18} />
-          </a>
-          <a href="#" className="about-section-social-link">
-            <Mail size={18} />
-          </a>
-        </div>
+        
+        <a href="https://wa.me/201223246720" target="_blank" rel="noopener noreferrer" className="about-section-cta">
+          <FaWhatsapp size={18} style={{ marginRight: '0.5rem' }} /> Let's Chat
+        </a>
       </div>
     </div>
   );

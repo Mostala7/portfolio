@@ -5,9 +5,8 @@ import AboutSection from './AboutSection';
 import PortraitSection from './PortraitSection';
 import ExperimentsSection from './ExperimentsSection';
 import CompaniesSection from './CompaniesSection';
-import NewsletterSection from './NewsletterSection';
+import StackSection from './StackSection';
 import WorkSection from './WorkSection';
-import Footer from './Footer';
 
 const BentoGrid = () => {
   return (
@@ -38,17 +37,12 @@ const BentoGrid = () => {
           <CompaniesSection />
         </div>
         <div className="grid-cell col-span-8 newsletter-cell">
-          <NewsletterSection />
+          <StackSection />
         </div>
 
         {/* Row 4 */}
         <div className="grid-cell col-span-12 work-cell">
           <WorkSection />
-        </div>
-        
-        {/* Row 5 */}
-        <div className="grid-cell col-span-12 footer-cell">
-          <Footer />
         </div>
       </div>
     </div>

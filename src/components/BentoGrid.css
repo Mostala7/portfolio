@@ -8,7 +8,7 @@
 
 .grid-cell {
   background-color: var(--bg-color);
-  padding: 3rem; /* default padding */
+  padding: 2rem; /* default padding */
 }
 
 /* Grid Span Classes */
@@ -33,7 +33,7 @@
 .header-cell {
   display: flex;
   align-items: center;
-  padding: 1rem 3rem; /* Reduced vertical padding */
+  padding: 1rem 2rem; /* Reduced vertical padding */
 }
 
 .about-portrait-cell {

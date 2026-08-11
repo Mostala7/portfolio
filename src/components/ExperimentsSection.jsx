@@ -31,13 +31,13 @@ const ExperimentsSection = () => {
           endNum={700000} 
           suffix=" SAR" 
           title="Total Ad Spend" 
-          desc="Managed on Meta & Snapchat"
+          desc="Managed on Meta, Snapchat, Google Ads, and Tiktok"
           minWidth="160px"
         />
         <StatCard 
           endNum={7} 
           prefix="x"
-          title="Peak Return on Ad Spend" 
+          title="Peak ROAS" 
           desc="Through rigorous creative testing" 
         />
         <StatCard 
@@ -51,7 +51,7 @@ const ExperimentsSection = () => {
           endNum={10} 
           prefix="+"
           title="Key Verticals" 
-          desc="SaaS, E-commerce, Real Estate & Healthcare" 
+          desc="SaaS, E-commerce, Real Estate, Healthcare, Cosmetics, and B2B" 
         />
       </div>
     </div>

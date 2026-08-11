@@ -1,17 +1,24 @@
 import React from 'react';
 import { MonitorPlay, ArrowUpRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './WorkSection.css';
 
-const WorkCard = ({ title, desc, watermark }) => (
+const WorkCard = ({ title, desc, watermark, linkTo }) => (
   <div className="work-card">
     <h3 className="work-card-title">{title}</h3>
     <p className="work-card-desc">
       {desc}
     </p>
     <div className="work-card-button-wrapper">
-      <button className="work-card-button">
-        View more <ArrowUpRight size={14} color="var(--text-light)" />
-      </button>
+      {linkTo ? (
+        <Link to={linkTo} className="work-card-button" style={{ display: 'inline-flex', textDecoration: 'none' }}>
+          View more <ArrowUpRight size={14} color="var(--text-light)" />
+        </Link>
+      ) : (
+        <button className="work-card-button">
+          View more <ArrowUpRight size={14} color="var(--text-light)" />
+        </button>
+      )}
     </div>
     
     {/* Watermark */}
@@ -31,9 +38,10 @@ const WorkSection = () => {
       
       <div className="work-grid">
         <WorkCard 
-          title="Awesome AI" 
-          desc="Had a stupid itch to build a Hacker News for AI in the style of Windows 95. So I did." 
-          watermark="A"
+          title="Motors Archive" 
+          desc="Launching & Scaling Motors Archive from 0 to 90,000 SAR/Month with Meta Ads" 
+          watermark="M"
+          linkTo="/case-study/motors-archive"
         />
         <WorkCard 
           title="A-Barber" 
