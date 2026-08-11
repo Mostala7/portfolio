@@ -1,0 +1,38 @@
+.header-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.header-text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.header-title {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  margin: 0;
+}
+
+.header-subtitle {
+  font-size: clamp(0.875rem, 1.5vw, 1.1rem);
+  font-weight: 600;
+  color: var(--badge-green);
+  margin: 0;
+}
+
+.header-badge {
+  background-color: var(--badge-green);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 24px 24px 24px 0; /* Speech bubble shape */
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  white-space: nowrap;
+}

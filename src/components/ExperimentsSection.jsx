@@ -1,83 +1,57 @@
 import React from 'react';
 import { TrendingUp } from 'lucide-react';
 import CountUpModule from 'react-countup';
+import './ExperimentsSection.css';
 const CountUp = CountUpModule.default || CountUpModule;
 
-const StatCard = ({ endNum, prefix = "", suffix = "", title, desc }) => (
-  <div style={{ 
-    padding: '1.25rem', 
-    border: '1px solid var(--grid-line-color)', 
-    borderRadius: 'var(--radius-md)',
-    marginBottom: '1rem',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    boxShadow: '0 2px 10px rgba(0,0,0,0.02)'
-  }}>
-    <div>
-      <h3 style={{ fontSize: '1.1rem', fontWeight: '600', marginBottom: '0.25rem', color: 'var(--text-light)' }}>{title}</h3>
-      <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', fontWeight: '500' }}>{desc}</p>
+const StatCard = ({ endNum, prefix = "", suffix = "", title, desc, minWidth = "120px" }) => (
+  <div className="stat-card-container">
+    <div className="stat-card-text-group">
+      <h3 className="stat-card-title">{title}</h3>
+      <p className="stat-card-desc">{desc}</p>
     </div>
-    <div style={{ 
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      padding: '0.5rem 1rem', 
-      backgroundColor: '#f9fafb', 
-      borderRadius: '8px', 
-      border: '1px solid #f3f4f6',
-      fontSize: '1.5rem',
-      fontWeight: '700',
-      color: 'var(--text-primary)'
-    }}>
-      <span style={{ color: 'var(--badge-green)', marginRight: '2px' }}>{prefix}</span>
+    <div className="stat-card-value-container" style={{ minWidth: minWidth }}>
+      {prefix && <span className="stat-card-prefix">{prefix}</span>}
       <CountUp end={endNum} duration={3.5} separator="," />
-      <span style={{ color: 'var(--badge-green)', marginLeft: '2px' }}>{suffix}</span>
+      {suffix && <span className="stat-card-suffix">{suffix}</span>}
     </div>
   </div>
 );
 
 const ExperimentsSection = () => {
   return (
-    <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-      <div style={{ 
-        display: 'flex', 
-        alignItems: 'center', 
-        gap: '0.5rem', 
-        fontSize: '0.75rem', 
-        fontWeight: '600', 
-        letterSpacing: '0.05em', 
-        color: 'var(--text-primary)', 
-        marginBottom: '2rem' 
-      }}>
+    <div className="experiments-container">
+      <div className="experiments-header">
         <TrendingUp size={16} color="var(--badge-green)" />
         HIGH-LEVEL STATS
       </div>
 
-      <div style={{ flex: 1 }}>
+      <div className="experiments-content">
         <StatCard 
-          endNum={600} 
-          suffix="K+ SAR" 
+          endNum={700000} 
+          suffix=" SAR" 
           title="Total Ad Spend" 
-          desc="Managed on Meta & Snapchat" 
+          desc="Managed on Meta & Snapchat"
+          minWidth="160px"
         />
         <StatCard 
           endNum={7} 
-          suffix="x ROAS" 
+          prefix="x"
           title="Peak Return on Ad Spend" 
           desc="Through rigorous creative testing" 
         />
         <StatCard 
-          endNum={100} 
-          suffix="+" 
-          title="High-Quality B2B Leads" 
-          desc="Acquired within first 30 days" 
+          endNum={80} 
+          prefix="+"
+          suffix="%" 
+          title="Client Retention Rate" 
+          desc="Long-term partnership focus" 
         />
         <StatCard 
-          endNum={4} 
-          title="E-commerce Verticals" 
-          desc="Coffee, Fashion, Tech & B2B" 
+          endNum={10} 
+          prefix="+"
+          title="Key Verticals" 
+          desc="SaaS, E-commerce, Real Estate & Healthcare" 
         />
       </div>
     </div>

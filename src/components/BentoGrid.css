@@ -15,18 +15,35 @@
 .col-span-4 { grid-column: span 4; }
 .col-span-8 { grid-column: span 8; }
 .col-span-12 { grid-column: span 12; }
+.row-span-2 { grid-row: span 2; }
+
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .col-span-4, .col-span-8, .col-span-12 {
     grid-column: span 12;
   }
+  .row-span-2 {
+    grid-row: span 1;
+  }
 }
+
 
 /* Specific Cell Adjustments */
 .header-cell {
   display: flex;
   align-items: center;
+  padding: 1rem 3rem; /* Reduced vertical padding */
+}
+
+.about-portrait-cell {
+  display: flex;
+  gap: 3rem;
+  flex-direction: row;
+}
+
+.about-portrait-child {
+  flex: 1;
 }
 
 .favorite-cell {

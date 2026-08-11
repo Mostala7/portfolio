@@ -1,13 +1,14 @@
 import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
   return (
-    <div style={{ textAlign: 'center', padding: '2rem 0', color: 'var(--text-light)', fontSize: '0.875rem' }}>
-      <p style={{ marginBottom: '0.5rem' }}>
-        Have an interesting, stupid or crazy idea you'd like some help building? <a href="#" style={{ textDecoration: 'underline', color: 'var(--badge-green)' }}>Let's talk.</a>
+    <div className="footer-container">
+      <p className="footer-text">
+        Have an interesting, stupid or crazy idea you'd like some help building? <a href="#" className="footer-link">Let's talk.</a>
       </p>
       <p>
-        2023 © Kuldar Kalvik
+        2023 © Mostafa Elesawy
       </p>
     </div>
   );

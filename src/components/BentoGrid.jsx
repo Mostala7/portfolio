@@ -14,21 +14,23 @@ const BentoGrid = () => {
     <div className="container">
       <div className="bento-grid">
         {/* Row 1 */}
-        <div className="grid-cell col-span-12 header-cell">
+        <div className="grid-cell col-span-8 header-cell">
           <HeaderSection />
+        </div>
+        
+        {/* Stats on the right spanning two rows */}
+        <div className="grid-cell col-span-4 row-span-2 experiments-cell">
+          <ExperimentsSection />
         </div>
 
         {/* Row 2 */}
-        <div className="grid-cell col-span-8 about-portrait-cell" style={{ display: 'flex', gap: '3rem', flexDirection: 'row' }}>
-          <div style={{ flex: 1 }}>
+        <div className="grid-cell col-span-8 about-portrait-cell">
+          <div className="about-portrait-child">
             <AboutSection />
           </div>
-          <div style={{ flex: 1 }}>
+          <div className="about-portrait-child">
             <PortraitSection />
           </div>
-        </div>
-        <div className="grid-cell col-span-4 experiments-cell">
-          <ExperimentsSection />
         </div>
 
         {/* Row 3 */}

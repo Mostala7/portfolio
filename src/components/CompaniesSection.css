@@ -1,0 +1,54 @@
+.companies-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.companies-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  max-width: 200px;
+}
+
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  opacity: 0.5;
+  align-items: center;
+}
+
+.company-logo-1 {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.company-logo-2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.05em;
+}
+
+.company-logo-3 {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.company-logo-4 {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.company-logo-5 {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.company-logo-6 {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
