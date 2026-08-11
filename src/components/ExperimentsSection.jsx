@@ -1,6 +1,7 @@
 import React from 'react';
 import { TrendingUp } from 'lucide-react';
-import CountUp from 'react-countup';
+import CountUpModule from 'react-countup';
+const CountUp = CountUpModule.default || CountUpModule;
 
 const StatCard = ({ endNum, prefix = "", suffix = "", title, desc }) => (
   <div style={{ 
