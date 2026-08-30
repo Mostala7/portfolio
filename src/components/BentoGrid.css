@@ -6,39 +6,18 @@
   border-bottom: 1px solid var(--grid-line-color);
 }
 
-.grid-cell {
-  background-color: var(--bg-color);
-  padding: 2rem; /* default padding */
-}
-
-/* Grid Span Classes */
-.col-span-4 { grid-column: span 4; }
-.col-span-8 { grid-column: span 8; }
-.col-span-12 { grid-column: span 12; }
-.row-span-2 { grid-row: span 2; }
-
-
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-  .col-span-4, .col-span-8, .col-span-12 {
-    grid-column: span 12;
-  }
-  .row-span-2 {
-    grid-row: span 1;
-  }
-}
 
 
 /* Specific Cell Adjustments */
 .header-cell {
   display: flex;
   align-items: center;
-  padding: 1rem 2rem; /* Reduced vertical padding */
+  padding: var(--space-sm) var(--space-lg); /* Reduced vertical padding */
 }
 
 .about-portrait-cell {
   display: flex;
-  gap: 3rem;
+  gap: var(--space-xl);
   flex-direction: row;
 }
 
@@ -49,7 +28,7 @@
 .favorite-cell {
   display: flex;
   justify-content: flex-end;
-  padding: 2rem;
+  padding: var(--space-lg);
 }
 
 .recent-favorite {

@@ -7,9 +7,22 @@
   --text-light: #9ca3af;
   --grid-line-color: #e5e7eb;
   --badge-green: #22c55e;
+  
+  /* Radii */
   --radius-md: 12px;
   --radius-lg: 16px;
   --radius-xl: 24px;
+  
+  /* Global Spacing Variables (Based on Landing Page) */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;   /* Standard cell padding */
+  --space-xl: 3rem;   /* Section gaps */
+  --space-xxl: 4rem;  /* Large page padding */
+  
+  /* Layout */
+  --page-max-width: 1200px;
 }
 
 html {
@@ -45,10 +58,11 @@ button {
 
 /* Layout Utilities */
 .container {
-  max-width: 1200px;
+  max-width: var(--page-max-width);
   margin: 0 auto;
   border-left: 1px solid var(--grid-line-color);
   border-right: 1px solid var(--grid-line-color);
+  background-color: var(--bg-color); /* Ensure consistent background */
 }
 
 .bento-grid {
@@ -60,6 +74,27 @@ button {
 
 .bento-grid > div {
   background-color: var(--bg-color);
+}
+
+.grid-cell {
+  background-color: var(--bg-color);
+  padding: var(--space-lg); /* Consistent global padding */
+}
+
+/* Grid Span Classes */
+.col-span-4 { grid-column: span 4; }
+.col-span-8 { grid-column: span 8; }
+.col-span-12 { grid-column: span 12; }
+.row-span-2 { grid-row: span 2; }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .col-span-4, .col-span-8, .col-span-12 {
+    grid-column: span 12;
+  }
+  .row-span-2 {
+    grid-row: span 1;
+  }
 }
 
 /* Common Text Styles */

@@ -12,11 +12,11 @@ const WorkCard = ({ title, desc, watermark, linkTo }) => (
     <div className="work-card-button-wrapper">
       {linkTo ? (
         <Link to={linkTo} className="work-card-button" style={{ display: 'inline-flex', textDecoration: 'none' }}>
-          View more <ArrowUpRight size={14} color="var(--text-light)" />
+          View more <ArrowUpRight size={18} className="arrow-icon" />
         </Link>
       ) : (
         <button className="work-card-button">
-          View more <ArrowUpRight size={14} color="var(--text-light)" />
+          View more <ArrowUpRight size={18} className="arrow-icon" />
         </button>
       )}
     </div>
