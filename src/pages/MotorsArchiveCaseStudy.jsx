@@ -19,7 +19,7 @@ const MotorsArchiveCaseStudy = () => {
 
   const [currentImage, setCurrentImage] = useState(0);
   const [activePhase, setActivePhase] = useState(1);
-  const images = ["/motorsArchiveResults1.png", "/motorsArchiveResults2.jpeg"];
+  const images = ["motorsArchiveResults1.png", "motorsArchiveResults2.jpeg"];
 
   const nextImage = () => setCurrentImage((prev) => (prev + 1) % images.length);
   const prevImage = () =>
@@ -42,7 +42,7 @@ const MotorsArchiveCaseStudy = () => {
             <div className="case-study-header-text">
               <div className="title-with-logo">
                 <img
-                  src="/Motors Archive.jpg"
+                  src="Motors Archive.jpg"
                   alt="Motors Archive Logo"
                   className="case-study-logo"
                 />
@@ -450,7 +450,7 @@ const MotorsArchiveCaseStudy = () => {
               <div className="creatives-grid">
                 <div className="creative-item video-creative">
                   <video
-                    src="/motorsArchiveCreative1.mp4"
+                    src="motorsArchiveCreative1.mp4"
                     controls
                     muted
                     loop
@@ -460,7 +460,7 @@ const MotorsArchiveCaseStudy = () => {
                 </div>
                 <div className="creative-item video-creative">
                   <video
-                    src="/motorsArchiveCreative2.mp4"
+                    src="motorsArchiveCreative2.mp4"
                     controls
                     muted
                     loop
@@ -470,21 +470,21 @@ const MotorsArchiveCaseStudy = () => {
                 </div>
                 <div className="creative-item">
                   <img
-                    src="/motorsArchiveCreative3.jpg"
+                    src="motorsArchiveCreative3.jpg"
                     alt="Creative 3"
                     className="creative-media"
                   />
                 </div>
                 <div className="creative-item">
                   <img
-                    src="/motorsArchiveCreative4.jpg"
+                    src="motorsArchiveCreative4.jpg"
                     alt="Creative 4"
                     className="creative-media"
                   />
                 </div>
                 <div className="creative-item">
                   <img
-                    src="/motorsArchiveCreative5.jpg"
+                    src="motorsArchiveCreative5.jpg"
                     alt="Creative 5"
                     className="creative-media"
                   />

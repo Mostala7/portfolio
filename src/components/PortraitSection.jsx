@@ -7,7 +7,7 @@ const PortraitSection = () => {
     <div className="portrait-container">
       <div className="portrait-image-wrapper">
         <img 
-          src="/portrait.png" 
+          src="portrait.png" 
           alt="Portrait" 
           className="portrait-image" 
         />
