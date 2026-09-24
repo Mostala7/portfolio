@@ -2,9 +2,9 @@ import React from 'react';
 import './CompaniesSection.css';
 
 const companies = [
-  { name: 'Fadaa Agency', src: '/Fadaa.jpeg' },
-  { name: 'Motors Archive', src: '/Motors Archive.jpg' },
-  { name: 'Hook Agency', src: '/Hook Agency.jpg' },
+  { name: 'Fadaa Agency', src: 'Fadaa.jpeg' },
+  { name: 'Motors Archive', src: 'Motors Archive.jpg' },
+  { name: 'Hook Agency', src: 'Hook Agency.jpg' },
 ];
 
 const CompaniesSection = () => {
