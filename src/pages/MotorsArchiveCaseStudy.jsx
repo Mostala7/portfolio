@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowLeft,
@@ -13,6 +13,10 @@ import {
 import "./MotorsArchiveCaseStudy.css";
 
 const MotorsArchiveCaseStudy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [currentImage, setCurrentImage] = useState(0);
   const [activePhase, setActivePhase] = useState(1);
   const images = ["/motorsArchiveResults1.png", "/motorsArchiveResults2.jpeg"];
