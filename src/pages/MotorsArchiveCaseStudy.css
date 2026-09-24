@@ -141,6 +141,23 @@
   margin-right: 0.25rem;
 }
 
+.brand-brief {
+  background-color: var(--bg-color);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--grid-line-color);
+  margin-bottom: var(--space-md);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.brand-brief-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 0.75rem 0;
+  letter-spacing: -0.01em;
+}
+
 /* Phase Navigation Tabs */
 .phase-nav-cell {
   padding: 0;

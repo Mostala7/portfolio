@@ -63,11 +63,23 @@ const MotorsArchiveCaseStudy = () => {
                 </div>
               </div>
 
-              <p className="phase-description">
-                When taking on the Motors Archive project, we were starting with
-                a completely blank slate. The brand was launching from zero,
-                meaning there was no pixel data, no established customer
-                avatars, and no historical account data to feed the algorithms.
+              <p
+                className="phase-description"
+                style={{ fontSize: "1.05rem", lineHeight: "1.7" }}
+              >
+                <strong>Motors Archive</strong> is a Saudi-based boutique D2C
+                brand specializing in premium automotive and motorsport framed
+                artwork. Capitalizing on the explosive growth of car culture and
+                Formula 1 in the Middle East, they offer highly curated pieces
+                designed to be the "perfect gift" for enthusiasts.
+                <br />
+                <br />
+                However, when we took on the project, we were starting with a
+                completely blank slate. Despite having a strong localized
+                product offering on the Salla platform, the brand was launching
+                from zero—meaning there was no pixel data, no validated customer
+                avatars, and no historical account data to feed the Meta
+                algorithms for their regional expansion.
               </p>
             </div>
             <Link to="/" className="back-link interactive-back">
